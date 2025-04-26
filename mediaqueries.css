@@ -24,42 +24,36 @@
   }
   
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
+@media (max-width:576px) {
   body, html {
       font-size: 12px;
   }
-  
-  nav {
-      width: 100%;
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  nav .nav-items {
-      width: 100%;
-      flex-direction: column;
-  }
 
   .hero {
-      height: 60vh;
+      height: 40vh;
       margin-top: 2rem;
       display: flex;
       align-items: center;
-      padding: 10px;
+      padding: 20px;
   }
 
   .hero h2 {
-      font-size: 20px;
+      font-size: 18px;
       text-align: left;
       padding: 20px;
   }
 
   .hero p {
     font-size: 16px;
-      width: 100%;
+    width: 100%;
+    text-align: left;
   }
+  /* //////////////////////////// */
   .image-shot{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .image-shot h2{
     text-align: left;
@@ -140,6 +134,9 @@
   .newsletter .newsletter-wrapper span{
     font-size: 16px;
   }
+  .newsletter .newsletter-wrapper .input-area {
+    padding-right: 10px;
+  }
 
   .faqs {
     width: 100%;
@@ -148,19 +145,18 @@
 }
 
 /* Small devices (portrait tablets, less than 768px) */
-@media (max-width: 767px) {
-  nav {
-      width: 100%;
-      gap: 30px;
-  }
+@media (max-width: 768px) {
 
   .hero {
       height: 50vh;
-      margin-top: 3rem;
+      /* margin-top: 3rem; */
+      display: flex;
+      justify-content: center;
   }
 
   .hero h2 {
       font-size: 50px;
+      text-align: center;
   }
 
   .hero p {
@@ -174,13 +170,22 @@
   .image-shot .image-wrapper {
       flex-direction: column;
       gap: 20px;
+      padding: 20px;
+    
   }
-
+  .image-shot .image-wrapper .card{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
   .contact .contact-wrapper {
       width: 90%;
       padding: 30px;
   }
 
+  .newsletter .newsletter-wrapper {
+    height: 30vh;
+  }
   .newsletter .newsletter-wrapper h2 {
       font-size: 35px;
   }
