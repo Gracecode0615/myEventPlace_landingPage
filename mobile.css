@@ -1,0 +1,49 @@
+  @media (min-width: 0px) and (max-width: 1200px) {}
+
+  @media (min-width: 0px) and (max-width: 900px) {
+    .hero{
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+      .hero .write-up {
+          width: 80%;
+      
+      }
+
+      .hero p {
+          width: 80%;
+      }
+
+      .hero h2 {
+          font-size: 45px;
+          line-height: 50px;
+          margin-bottom: 15px;
+      }
+      .figure{
+        bottom: 109%;
+    
+      }
+  }
+
+  @media (min-width: 0px) and (max-width: 600px) {
+    .hero{
+        height: auto;
+        padding-bottom: 60px;
+    }
+      .hero .write-up {
+          width: 90%;
+      }
+
+      .hero h2 {
+          font-size: 25px;
+          line-height: 35px;
+          margin-bottom: 10px;
+      }
+
+      .hero p {
+          width: 90%;
+          font-size: 13px;
+          margin-bottom: 30px;
+      }
+  }
