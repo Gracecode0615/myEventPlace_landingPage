@@ -1,10 +1,6 @@
   @media (min-width: 0px) and (max-width: 1200px) {}
 
   @media (min-width: 0px) and (max-width: 900px) {
-    .hero{
-        height: auto;
-        padding-bottom: 60px;
-    }
 
       .hero .write-up {
           width: 80%;
@@ -24,13 +20,90 @@
         bottom: 109%;
     
       }
+      .service h2 {
+        font-size: 36px;
+        text-align: center;
+      }
+    
+      .service p {
+        font-size: 14px;
+        text-align: center;
+      }
+    
+      .service .image-wrapper {
+        display: flex;;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    
+      .service .card {
+        width: 100%;
+        max-width: 500px;
+        padding: 15px;
+      }
+    
+      .service .card .card-img {
+        width: 100%;
+        padding: 10px;
+      }
+    
+      .service .card .card-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    
+      .service .card .card-info {
+        padding: 20px;
+        text-align: center;
+      }
+    
+      .card-info h3 {
+        font-size: 1.2rem;
+      }
+    
+      .card-info p {
+        font-size: 1rem;
+      }
+      .event-about {
+        flex-direction: column;
+        padding: 30px 15px;
+      }
+    
+      .event-wrapper {
+        width: 90% !important;
+        text-align: center;
+      }
+    
+      .event-wrapper h2 {
+        font-size: 20px;
+      }
+    
+      .event-wrapper .event-text2 {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+        flex-direction: column;
+      }
+    
+      .event-wrapper button {
+        width: 220px;
+        font-size: 13px;
+        height: 42px;
+      }
+      .payment{
+        width: 80%;
+      }
+      .payment .payment-wrapper{
+        width: 80%;
+        display:flex;
+        flex-direction: column-reverse;
+
+      }
   }
 
   @media (min-width: 0px) and (max-width: 600px) {
-    .hero{
-        height: auto;
-        padding-bottom: 60px;
-    }
       .hero .write-up {
           width: 90%;
       }
@@ -46,4 +119,61 @@
           font-size: 13px;
           margin-bottom: 30px;
       }
+      .service{
+        width: 100%;
+      }
+      .service .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    
+      .service .card {
+        max-width: 90%;
+        width: 100%;
+        padding: 10px;
+      }
+    
+      .service .card .card-img {
+        width: 80%;
+        padding: 10px;
+      }
+    
+      .service .card .card-img img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+      }
+      .event-wrapper{
+        width: 80%;
+      }
+      .event-wrapper h2 {
+            font-size: 25px;
+          line-height: 35px;
+          margin-bottom: 10px;
+      }
+    
+      .event-wrapper p{
+          width: 90%;
+          font-size: 13px;
+          margin-bottom: 30px;
+      }
+    
+      .event-wrapper button {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+      }
+      .payment .payment-wrapper{
+        width: 80%;
+        display:flex;
+        flex-direction: column-reverse;
+
+      }
+
   }

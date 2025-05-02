@@ -36,6 +36,7 @@ section {
     margin: auto;
 }
 
+
 /* //////////////////////// */
 .hero {
     position: relative;
@@ -157,10 +158,8 @@ section {
 .service {
     position: relative;
     width: 100%;
-    max-width: 1200px;
-    margin:30px auto;
     z-index: 1;
-    background: #fff;
+    background: hsl(0, 0%, 100%);
 }
 
 .service h2 {
@@ -182,6 +181,8 @@ section {
 .service .image-wrapper {
     position: relative;
     width: 100%;
+    max-width: 1100px;
+    background: #fff;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -195,18 +196,13 @@ section {
     background: #fff;
     border-radius: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
-    max-width: 40%;
+    /* max-width: 40%; */
     padding: 10px;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    width:450px;
+    height: 500px;
     transition: transform 0.3s ease;
     /* background: red; */
 }
-
-/* .card:hover {
-    transform: translateY(-8px);
-  } */
 
 .service .image-wrapper .card .card-img {
     position: relative;
@@ -225,12 +221,11 @@ section {
 
 .service .image-wrapper .card .card-img img {
     width: auto;
-    height: auto;
+    height: 300px;
     border-radius: 20px;
     object-fit: cover;
-    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
 }
-
+/* 
 .service .image-wrapper .card:first-child .card-img img {
     margin-left: 5rem;
     margin-top: 4rem;
@@ -261,10 +256,12 @@ section {
     bottom: 0;
 
 
-}
+} */
 
 .service .image-wrapper .card .card-info {
+    position: relative;
     padding: 20px;
+    height: 70px;
     text-align: left;
     background: white;
     border-radius: 0 0 20px 20px;
@@ -272,8 +269,9 @@ section {
 
 
 .card-info h3 {
-    font-size: 1.25rem;
-    margin-bottom: 5px;
+    font-size:16px;
+    margin: 0;
+    padding: 0;
     color: #111;
 }
 
@@ -281,6 +279,7 @@ section {
     font-size: 0.95rem;
     color: #444;
     text-align: left;
+    margin: 5px;
 }
 
 /* Staggered Layout */
@@ -288,187 +287,65 @@ section {
     margin-top: 50px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .image-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .card {
-        max-width: 90%;
-    }
-
-    .card-img img {
-        width: 80%;
-    }
-}
-
-
 /* ///////////////////////////////////// */
 .event-about {
     position: relative;
     width: 100%;
-    text-align: center;
-    /* padding: 60px; */
+    padding: 50px 0;
     display: flex;
-    justify-content: center;
-    margin: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .event-about .event-wrapper {
     position: relative;
-    width: 70%;
+    width: auto;
+    height: auto;
+    max-width: 850px;
+    z-index: 2;
 }
-
-.event-about .event-wrapper .text1 {
-    margin-bottom: 20px;
-}
-
 .event-about .event-wrapper h2 {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     font-size: 50px;
 }
 
-.event-about .event-wrapper h2 .event-dot {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
-    background: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188));
-    margin: 15px 10px;
-    bottom: 0;
-}
 
-.event-about .event-wrapper .event-text2 {
+.event-about .event-wrapper p {
+    width: 80%;
     display: flex;
-    width: 100%;
+    margin: auto;
     color: #888;
     margin-bottom: 30px;
 }
 
-.event-about .event-wrapper .event-btn {
+.event-about .event-wrapper button {
     position: relative;
-    display: flex;
-    margin: auto;
-    text-align: center;
-    width: 250px;
-    height: 45px;
-    line-height: 25px;
-    font-weight: bold;
-    color: #000;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background:
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) padding-box,
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) border-box;
+    width: fit-content;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188));
+    border-style: none;
     color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
     cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 40px;
-    align-items: center;
-    transition: all 0.3s ease;
-    gap: 10px;
+    transition: 0.5s;
 }
-
-.event-about .event-wrapper .event-btn:hover {
-    background:
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) padding-box,
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) border-box;
-    color: #fff;
-}
-
-.event-about .event-wrapper .event-btn i {
+.event-about .event-wrapper button i {
     font-size: 14px;
     font-weight: bold;
 }
 
-.event-about .event-wrapper .event-btn i:hover {
+.event-about .event-wrapper button:hover i {
     color: #fff;
     margin-left: 5px;
 }
 
 /* /////////////////////////////////////////////// */
-.core-value {
-    position: relative;
-    width: 100%;
-    padding: 50px 20px;
-    background: #f9f9f9;
-    overflow: hidden;
-}
 
-.core-value .core-value-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.core-value .core-value-wrapper .core-value-slider {
-    position: relative;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-}
-
-.core-value .core-value-wrapper .core-value-slider::-webkit-scrollbar {
-    display: none;
-}
-
-.core-value .core-value-wrapper .card {
-    position: relative;
-    min-height: 300px;
-    max-width: 50%;
-    flex: 0 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.core-value .core-value-wrapper .card img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-
-}
-
-.core-value .core-value-wrapper .slider-btn {
-    position: relative;
-    background-color: rgba(2, 211, 249, 0.9);
-    color: #fff;
-    border: none;
-    padding: 12px 18px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-.prev {
-    margin-right: 10px;
-}
-
-.next {
-    margin-left: 10px;
-}
-
-.core-value .core-value-wrapper .card .core-value-card {
-    position: absolute;
-    bottom: 0;
-    right: -20px;
-    width: 300px;
-    padding: 20px;
-    background: #fff;
-    transform: translateY(-50%);
-
-}
 
 /* ////////////////////////////////////////////// */
 .card-holder {
@@ -530,115 +407,115 @@ section {
 
 /* //////////////////////////////////////// */
 
-.contact {
-    position: relative;
-    /* width: 100%; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.contact .contact-wrapper {
-    position: relative;
-    width: 70%;
-    margin: auto;
-}
-
-.contact .contact-wrapper h2 {
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 50px;
-}
-
-.contact .contact-wrapper h2 .event-dot {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
-    background: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188));
-    margin: 15px 10px;
-    bottom: 0;
-}
-
-.contact .contact-wrapper .contact-text2 {
-    display: flex;
-    width: 70%;
-    color: #888;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-.contact .contact-wrapper .contact-btn {
-    position: relative;
-    display: flex;
-    margin: auto;
-    text-align: center;
-    width: 200px;
-    height: 45px;
-    line-height: 25px;
-    font-weight: bold;
-    color: #000;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background:
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) padding-box,
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) border-box;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 40px;
-    align-items: center;
-    transition: all 0.3s ease;
-    gap: 10px;
-}
-
-.contact .contact-wrapper .contact-btn:hover {
-    background:
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) padding-box,
-        linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188)) border-box;
-    color: #fff;
-}
-
-.contact .contact-wrapper .contact-btn i {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.contact .contact-wrapper .contact-btn i:hover {
-    color: #fff;
-    margin-left: 5px;
-}
 
 /* //////////////////////////////////////////// */
+.payment{
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+.payment h2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    /* margin-left: 40px; */
+}
+.payment .payment-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    /* padding: 40px; */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.payment .payment-write-up{
+    /* background: green; */
+    width: 50%;
+    height: auto;
+}
+.payment .payment-write-up .payment-card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.payment .payment-write-up .payment-card img{
+    position: relative;
+    width: 30px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.payment .payment-write-up .payment-card h4{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    margin:0 0 8px 0;
+}
+.payment .payment-write-up .payment-card span{
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    height: auto;
+}
 
+.payment .payment-img{
+    background-image: url("https://eventbrite-s3.s3.us-east-1.amazonaws.com/marketing/landingpages/assets/2025/rebrand/l/event-payment/a--ph-phone-b-00.jpg");
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.payment button{
+    position: relative;
+    width: fit-content;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188));
+    border-style: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    transition: 0.5s;
+}
+.payment button i{
+    transform: rotate(-40deg);
+}
+.payment button:hover i{
+    margin-left: 3px;
+}
 
 /* //////////////////////////////////////////// */
 
 .newsletter {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background: linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgba(0, 245, 188));
     margin: auto;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .newsletter .newsletter-wrapper {
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    padding: 3rem 0;
-    color: #fff;
+    max-width: 850px;
+    z-index: 2;
 }
 
 .newsletter .newsletter-wrapper h2 {
@@ -718,9 +595,11 @@ section {
 .faqs {
     position: relative;
     width: 100%;
-    max-width: 500px;
+    max-width: 1100px;
     height: auto;
+    margin: auto;
     cursor: pointer;
+    padding: 50px 20px ;
 
 }
 
@@ -737,33 +616,32 @@ section {
 .faqs .faq-holder {
     position: relative;
     width: 100%;
-    max-height: auto;
-    /* font-size: 12px; */
-    font-weight: 500;
-    background: #fff;
-    padding: 20px;
-    border-bottom: 1px solid rgb(215, 215, 215);
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
-    margin-bottom: 10px;
-    transition: 3s;
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+}
+.faqs .faq-holder .faq-card{
+    position: relative;
+    width:500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.faqs .faq-holder:hover {
+.faqs .faq-holder .faq-card:hover {
     max-height: 200px;
 }
 
-.faqs .faq-holder:hover p {
+.faqs .faq-holder .faq-card:hover p {
     display: block;
 }
 
-.faqs .faq-holder h2 {
+.faqs .faq-holder .faq-card h2 {
     position: relative;
     width: 100%;
     height: auto;
     font-size: 16px;
 }
 
-.faqs .faq-holder p {
+.faqs .faq-holder .faq-card p {
     position: relative;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -773,7 +651,7 @@ section {
     display: none;
 }
 
-.faqs .faq-holder i {
+.faqs .faq-card i {
     position: absolute;
     top: 0;
     right: 0;
@@ -781,7 +659,7 @@ section {
     margin: 26px 30px;
 }
 
-.faqs .faq-holder:hover i {
+.faqs .faq-holder .faq-card:hover i {
     transform: rotate(180deg);
 }
 
