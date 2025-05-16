@@ -1,10 +1,24 @@
-  @media (min-width: 0px) and (max-width: 1200px) {}
+  @media (min-width: 0px) and (max-width: 1200px) {
+      .hero {
+          height: 600px;
+          max-height: 600px;
+      }
+
+      .payment {}
+
+      .payment .image {
+          width: 45%;
+      }
+  }
 
   @media (min-width: 0px) and (max-width: 900px) {
 
+      .hero {
+          height: auto;
+      }
+
       .hero .write-up {
           width: 80%;
-      
       }
 
       .hero p {
@@ -12,97 +26,181 @@
       }
 
       .hero h2 {
-          font-size: 45px;
+          font-size: 40px;
           line-height: 50px;
           margin-bottom: 15px;
       }
-      .figure{
-        bottom: 109%;
-    
-      }
-      .service h2 {
-        font-size: 36px;
-        text-align: center;
-      }
-    
-      .service p {
-        font-size: 14px;
-        text-align: center;
-      }
-    
-      .service .image-wrapper {
-        display: flex;;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-      }
-    
-      .service .card {
-        width: 100%;
-        max-width: 500px;
-        padding: 15px;
-      }
-    
-      .service .card .card-img {
-        width: 100%;
-        padding: 10px;
-      }
-    
-      .service .card .card-img img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-    
-      .service .card .card-info {
-        padding: 20px;
-        text-align: center;
-      }
-    
-      .card-info h3 {
-        font-size: 1.2rem;
-      }
-    
-      .card-info p {
-        font-size: 1rem;
-      }
-      .event-about {
-        flex-direction: column;
-        padding: 30px 15px;
-      }
-    
-      .event-wrapper {
-        width: 90% !important;
-        text-align: center;
-      }
-    
-      .event-wrapper h2 {
-        font-size: 20px;
-      }
-    
-      .event-wrapper .event-text2 {
-        font-size: 14px;
-        line-height: 1.6;
-        text-align: center;
-        flex-direction: column;
-      }
-    
-      .event-wrapper button {
-        width: 220px;
-        font-size: 13px;
-        height: 42px;
-      }
-      .payment{
-        width: 80%;
-      }
-      .payment .payment-wrapper{
-        width: 80%;
-        display:flex;
-        flex-direction: column-reverse;
+
+      .figure {
+          bottom: 109%;
 
       }
+
+      .service {
+          margin: auto;
+          width: 100%;
+          padding: 20px 10px;
+      }
+
+      .service h2 {
+          font-size: 25px;
+          text-align: center;
+          width: 90%;
+          margin: 10px auto;
+      }
+
+      .service p {
+          font-size: 14px;
+          text-align: center;
+          width: 80%;
+          margin: auto;
+
+      }
+
+      .service .image-wrapper {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          gap: 10px;
+      }
+
+      .service .card {
+          width: 50%;
+          border-radius: 30px;
+      }
+
+      .card:nth-child(even) {
+          margin-top: 0px;
+      }
+
+      .service .card .card-img {
+          width: 100%;
+          padding: 10px;
+      }
+
+      .service .card .card-img img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+      }
+
+      .service .card .card-info {
+          padding: 20px;
+          width: 100%;
+          text-align: left;
+      }
+
+      .card-info h3 {
+          font-size: 1.2rem;
+      }
+
+      font-size: 1rem;
+      text-align: left;
   }
 
+  .event-about {
+      flex-direction: column;
+      padding: 30px 15px;
+      color: red;
+  }
+
+  .event-wrapper {
+      width: 90% !important;
+      text-align: center;
+  }
+
+  .event-about .event-wrapper h2 {
+      font-size: 20px;
+  }
+
+  .event-wrapper .event-text2 {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+      flex-direction: column;
+  }
+
+  .event-wrapper button {
+      width: 220px;
+      font-size: 13px;
+      height: 42px;
+  }
+
+  /* /////////////////////////////// */
+  .payment {
+      width: 100%;
+  }
+
+  .payment .payment-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+  }
+.payment .payment-write-up{
+    width: 100%;
+    height: auto;
+}
+.payment .payment-write-up .payment-card {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc
+}
+.payment .image{
+    width: 100%;
+    height: 50vh;
+}
+ /* Newsletter Section */
+      .newsletter {
+          width: 100%;
+          height: auto;
+          padding: 60px 20px;
+      }
+
+      .newsletter .newsletter-wrapper {
+          width: 90%;
+          margin: 0 auto;
+      }
+
+    .newsletter .newsletter-wrapper h2 {
+          font-size:24px;
+          margin: 0 0 10px 0;
+/*        color: yellow*/
+      }
+.newsletter .newsletter-wrapper .input-area {
+   width: 90%;
+    margin:15px auto;
+}
+
+      /* FAQs Section */
+      .faqs {
+          padding: 30px 20px;
+      }
+
+      .faqs .title {
+          font-size: 20px;
+          margin:15px auto;
+          margin-bottom: 20px;
+      }
+
+      .faqs .faq-holder .faq-card {
+          width: 80%;
+          padding: 15px 20px 20px;
+      }
+
+      .faqs .faq-card h2 {
+          font-size: 18px;
+          padding-right: 30px;
+      }
+
+      .faqs .faq-card i {
+          margin: 15px 20px;
+      }
+
+  }
+
+/*//////////////////////////////////*/
   @media (min-width: 0px) and (max-width: 600px) {
       .hero .write-up {
           width: 90%;
@@ -119,61 +217,178 @@
           font-size: 13px;
           margin-bottom: 30px;
       }
-      .service{
-        width: 100%;
+
+      /*      ///////////////////////////////*/
+      /*      ///////////////////////////////*/
+
+      .service {
+          width: 100%;
       }
+
       .service .image-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
       }
-    
-      .service .card {
-        max-width: 90%;
-        width: 100%;
-        padding: 10px;
+
+      .service .image-wrapper .card {
+          max-width: 90%;
+          width: 100%;
+          padding: 10px;
       }
-    
+
       .service .card .card-img {
-        width: 80%;
-        padding: 10px;
+          width: 80%;
+          padding: 10px;
       }
-    
+
       .service .card .card-img img {
-        width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        object-fit: cover;
-        display: block;
-        border-radius: 20px;
+          width: 100% !important;
+          height: auto !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          object-fit: cover;
+          display: block;
+          border-radius: 20px;
       }
-      .event-wrapper{
-        width: 80%;
+
+      /* ///////////////////////////////// */
+      .event-wrapper {
+          width: 100%;
+          background: yellow
+              
       }
-      .event-wrapper h2 {
-            font-size: 25px;
-          line-height: 35px;
+
+      .event-about .event-wrapper h2 {
+          font-size: 18px;
+          width: 90%;
+          margin: auto;
           margin-bottom: 10px;
       }
-    
-      .event-wrapper p{
+
+      .event-about .event-wrapper p {
           width: 90%;
-          font-size: 13px;
+          padding: 0 10px;
+          font-size: 14px;
+          text-align: center;
+          margin: auto;
           margin-bottom: 30px;
       }
-    
-      .event-wrapper button {
-        width: 200px;
-        height: 40px;
-        font-size: 12px;
-      }
-      .payment .payment-wrapper{
-        width: 80%;
-        display:flex;
-        flex-direction: column-reverse;
 
+      .event-wrapper button {
+          width: 200px;
+          height: 40px;
+          font-size: 12px;
+      }
+
+      /* /////////////////////////////// */
+      .payment {
+          width: 100%;
+          padding: 10px;
+          margin-top: 50px;
+      }
+
+      .payment .payment-wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+      }
+
+      .payment h2 {
+          width: 100%;
+          font-size: 18px;
+          margin-bottom: 20px
+      }
+
+      .payment .payment-wrapper .payment-write-up {
+          width: 100%;
+
+      }
+
+      .payment .payment-wrapper .payment-card {
+          width: 100%;
+          padding: 10px;
+          text-align: left;
+          color: blue;
+      }
+
+      .payment .image {
+          display: none;
+
+      }
+
+      /* Newsletter Section */
+      .newsletter {
+          width: 100%
+/*          padding: 50px 15px;*/
+      }
+
+      .newsletter h2 {
+          font-size: 26px;
+      }
+
+      .newsletter span {
+          font-size: 14px;
+      }
+
+      .newsletter .input-area {
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      .newsletter .input-area input[type="email"] {
+          width: 100%;
+          padding: 12px 15px;
+      }
+
+      .newsletter .input-area button {
+          position: relative;
+          width: 100%;
+          margin: 0;
+      }
+
+      /* FAQs Section */
+      .faqs {
+          padding: 20px 15px;
+      }
+
+      .faqs .title {
+          font-size: 24px;
+          margin-bottom: 15px;
+      }
+
+      .faqs .faq-holder .faq-card {
+          padding: 12px 15px 15px;
+      }
+
+      .faqs .faq-card h2 {
+          font-size: 16px;
+      }
+
+      .faqs .faq-card p {
+          font-size: 14px;
+          margin-top: 10px;
       }
 
   }
+
+/* /////////////////////////////////*/
+
+ @media (max-width: 400px) {
+
+      /* Newsletter Section */
+      .newsletter h2 {
+          font-size: 22px;
+      }
+
+      .newsletter .input-area button {
+          height: 45px;
+      }
+
+      /* FAQs Section */
+      .faqs .faq-card h2 {
+          font-size: 15px;
+      }
+  }
+ 
