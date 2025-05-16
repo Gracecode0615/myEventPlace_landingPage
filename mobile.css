@@ -39,7 +39,7 @@
       .service {
           margin: auto;
           width: 100%;
-          padding: 20px 10px;
+          /*          padding: 20px 10px;*/
       }
 
       .service h2 {
@@ -59,15 +59,16 @@
 
       .service .image-wrapper {
           width: 100%;
-          display: flex;
           align-items: center;
           margin: auto;
           gap: 10px;
       }
 
       .service .card {
-          width: 50%;
+          padding: 10px;
+          width: 100%;
           border-radius: 30px;
+          background: red;
       }
 
       .card:nth-child(even) {
@@ -86,7 +87,6 @@
       }
 
       .service .card .card-info {
-          padding: 20px;
           width: 100%;
           text-align: left;
       }
@@ -95,63 +95,72 @@
           font-size: 1.2rem;
       }
 
-      font-size: 1rem;
-      text-align: left;
-  }
+      .service .card .card-info p {
+          text-align: left;
+          width: 100%;
+      }
 
-  .event-about {
-      flex-direction: column;
-      padding: 30px 15px;
-      color: red;
-  }
+      .event-about {
+          flex-direction: column;
+          padding: 30px 15px;
+          color: red;
+      }
 
-  .event-wrapper {
-      width: 90% !important;
-      text-align: center;
-  }
+      .event-wrapper {
+          width: 90% !important;
+          text-align: center;
+      }
 
-  .event-about .event-wrapper h2 {
-      font-size: 20px;
-  }
+      .event-about .event-wrapper h2 {
+          font-size: 20px;
+      }
 
-  .event-wrapper .event-text2 {
-      font-size: 14px;
-      line-height: 1.6;
-      text-align: center;
-      flex-direction: column;
-  }
+      .event-wrapper .event-text2 {
+          font-size: 14px;
+          line-height: 1.6;
+          text-align: center;
+          flex-direction: column;
+      }
 
-  .event-wrapper button {
-      width: 220px;
-      font-size: 13px;
-      height: 42px;
-  }
+      .event-wrapper button {
+          width: 220px;
+          font-size: 13px;
+          height: 42px;
+      }
 
-  /* /////////////////////////////// */
-  .payment {
-      width: 100%;
-  }
+      /* /////////////////////////////// */
+      .payment {
+          width: 100%;
+      }
 
-  .payment .payment-wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-  }
-.payment .payment-write-up{
-    width: 100%;
-    height: auto;
-}
-.payment .payment-write-up .payment-card {
-    width: 100%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc
-}
-.payment .image{
-    width: 100%;
-    height: 50vh;
-}
- /* Newsletter Section */
+      .payment .payment-wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+      }
+
+      .payment .payment-wrapper .payment-write-up {
+          width: 100%;
+          height: auto;
+      }
+
+      .payment .payment-wrapper .payment-write-up .payment-card {
+          width: 100%;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #ccc
+      }
+       .payment .payment-wrapper  .payment-write-up .payment-card span {
+         width: 65%;
+        color: red;
+      }
+
+      .payment .image {
+          width: 100%;
+          height: 50vh;
+      }
+
+      /* Newsletter Section */
       .newsletter {
           width: 100%;
           height: auto;
@@ -163,15 +172,16 @@
           margin: 0 auto;
       }
 
-    .newsletter .newsletter-wrapper h2 {
-          font-size:24px;
+      .newsletter .newsletter-wrapper h2 {
+          font-size: 24px;
           margin: 0 0 10px 0;
-/*        color: yellow*/
+          /*        color: yellow*/
       }
-.newsletter .newsletter-wrapper .input-area {
-   width: 90%;
-    margin:15px auto;
-}
+
+      .newsletter .newsletter-wrapper .input-area {
+          width: 90%;
+          margin: 15px auto;
+      }
 
       /* FAQs Section */
       .faqs {
@@ -180,7 +190,7 @@
 
       .faqs .title {
           font-size: 20px;
-          margin:15px auto;
+          margin: 15px auto;
           margin-bottom: 20px;
       }
 
@@ -200,7 +210,7 @@
 
   }
 
-/*//////////////////////////////////*/
+  /*//////////////////////////////////*/
   @media (min-width: 0px) and (max-width: 600px) {
       .hero .write-up {
           width: 90%;
@@ -256,8 +266,6 @@
       /* ///////////////////////////////// */
       .event-wrapper {
           width: 100%;
-          background: yellow
-              
       }
 
       .event-about .event-wrapper h2 {
@@ -310,8 +318,9 @@
           width: 100%;
           padding: 10px;
           text-align: left;
-          color: blue;
       }
+
+     
 
       .payment .image {
           display: none;
@@ -321,7 +330,7 @@
       /* Newsletter Section */
       .newsletter {
           width: 100%
-/*          padding: 50px 15px;*/
+              /*          padding: 50px 15px;*/
       }
 
       .newsletter h2 {
@@ -373,9 +382,9 @@
 
   }
 
-/* /////////////////////////////////*/
+  /* /////////////////////////////////*/
 
- @media (max-width: 400px) {
+  @media (max-width: 400px) {
 
       /* Newsletter Section */
       .newsletter h2 {
@@ -391,4 +400,3 @@
           font-size: 15px;
       }
   }
- 

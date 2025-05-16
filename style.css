@@ -353,31 +353,31 @@ section {
     margin: auto;
     margin-bottom: 40px;
 }
-.payment .payment-write-up{
+.payment  .payment-wrapper .payment-write-up{
     width: 50%;
     height: auto;
 }
-.payment .payment-write-up .payment-card{
+.payment  .payment-wrapper .payment-write-up .payment-card{
     position: relative;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     background: #fff;
 }
-.payment .payment-write-up .payment-card img{
+.payment .payment-wrapper .payment-write-up .payment-card img{
     position: relative;
     width: 30px;
     height: 50px;
     margin-bottom: 10px;
 }
-.payment .payment-write-up .payment-card h4{
+.payment .payment-wrapper .payment-write-up .payment-card h4{
     position: relative;
     width: 100%;
     height: auto;
     font-size: 18px;
     margin:0 0 8px 0;
 }
-.payment .payment-write-up .payment-card span{
+.payment .payment-wrapper .payment-write-up .payment-card span{
     position: relative;
     width: 100%;
     font-size: 16px;
